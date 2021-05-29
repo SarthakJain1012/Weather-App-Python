@@ -1,0 +1,13 @@
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box{
+    padding: 10px;
+    background-size: 50%;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+</br>
+    <div id="box" style="background-image: url('static/images/night.jpg'); width: 50vh;">
+        <h3>Weather for {{ city }}</h3>
+        <h5>Temperature- {{ temp }}°C</h5>
+        <h5>Feels Like- {{ feels_like }}°C</h5>
+        <h5>Humidity- {{ humidity }}%</h5>
+    </div>
+</div>
+{% endblock %}
