@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 import requests
 import json
-
+import config
 from requests.models import requote_uri
 
+import os
 app = Flask(__name__)
 
 @app.route('/', methods=['POST','GET'])
@@ -11,7 +12,7 @@ def index():
     if request.method =="POST":
         city=request.form['city']
         country=request.form['country']
-        api_key="e4ccae9bd4e0c6d8701704909f864d21"
+        api_key=config.api_key
 
         weather_url = requests.get(
             f'http://api.openweathermap.org/data/2.5/weather?appid={api_key}&q={city},{country}&units=imperial')
